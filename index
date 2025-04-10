@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário com EmailJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      ;(function () {
+        emailjs.init("aDAPL1xZgdOQilTxg")
+      })()
+    </script>
+  </head>
+  <body>
+    <form id="contato-form">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <input type="date" name="data" required />
+      <input type="time" name="hora" required />
+      <button type="submit">Agendar</button>
+    </form>
+
+    <script src="text1.js"></script>
+  </body>
+</html>
